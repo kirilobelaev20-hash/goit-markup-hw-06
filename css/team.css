@@ -4,11 +4,14 @@
 
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 72px 24px;
 }
 
 .team-card {
-  flex-basis: calc((100% - 72px) / 4);
+  width: 264px;
+  flex: 0 0 264px;
   border-radius: 0 0 4px 4px;
   background-color: #fff;
   text-align: center;
@@ -71,4 +74,17 @@
 
 .social-icon {
   fill: currentColor;
+}
+
+@media (min-width: 768px) {
+  .team-list {
+    row-gap: 64px;
+  }
+}
+
+@media (min-width: 1158px) {
+  .team-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
 }

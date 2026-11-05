@@ -36,7 +36,7 @@ img {
 }
 
 .section {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .section-title {
@@ -65,4 +65,16 @@ img {
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
   margin: -1px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+@media (min-width: 1158px) {
+  .section {
+    padding: 120px 0;
+  }
 }
