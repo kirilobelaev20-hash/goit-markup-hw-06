@@ -25,18 +25,6 @@
         <a class="logo header-logo" href="./index.html"
           >Web<span class="part-logo">Studio</span></a
         >
-        <button
-          class="mobile-menu-toggle"
-          type="button"
-          aria-label="Open menu"
-          aria-controls="mobile-menu"
-          aria-expanded="false"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
         <nav class="header-nav" aria-label="Main navigation">
           <ul class="nav-list">
             <li>
@@ -63,6 +51,17 @@
             </li>
           </ul>
         </address>
+        <button
+          class="mobile-menu-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <svg width="24" height="24" aria-hidden="true">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -83,7 +82,7 @@
 
       <section id="features" class="section">
         <div class="container">
-          <h2 class="sr-only">Our Features</h2>
+          <h2 class="sr-only">Our features</h2>
           <ul class="features-list">
             <li class="features-item">
               <div class="features-icon" aria-hidden="true">
@@ -144,6 +143,7 @@
             <li class="team-card">
               <img
                 src="./images/img-3.jpg"
+                srcset="./images/img-3@2x.jpg 2x"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -186,6 +186,7 @@
             <li class="team-card">
               <img
                 src="./images/img-2.jpg"
+                srcset="./images/img-2@2x.jpg 2x"
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -228,6 +229,7 @@
             <li class="team-card">
               <img
                 src="./images/img-1.jpg"
+                srcset="./images/img-1@2x.jpg 2x"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -270,6 +272,7 @@
             <li class="team-card">
               <img
                 src="./images/img.jpg"
+                srcset="./images/img@2x.jpg 2x"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -321,6 +324,7 @@
               <div class="portfolio-thumb">
                 <img
                   src="./images/pf-1.jpg"
+                  srcset="./images/pf-1@2x.jpg 2x"
                   alt="Banking App"
                   width="360"
                   height="300"
@@ -340,6 +344,7 @@
               <div class="portfolio-thumb">
                 <img
                   src="./images/pf-2.jpg"
+                  srcset="./images/pf-2@2x.jpg 2x"
                   alt="Cashless Payment"
                   width="360"
                   height="300"
@@ -359,6 +364,7 @@
               <div class="portfolio-thumb">
                 <img
                   src="./images/pf-3.jpg"
+                  srcset="./images/pf-3@2x.jpg 2x"
                   alt="Meditation App"
                   width="360"
                   height="300"
@@ -378,6 +384,7 @@
               <div class="portfolio-thumb">
                 <img
                   src="./images/pf-4.jpg"
+                  srcset="./images/pf-4@2x.jpg 2x"
                   alt="Taxi Service"
                   width="360"
                   height="300"
@@ -397,6 +404,7 @@
               <div class="portfolio-thumb">
                 <img
                   src="./images/pf-5.jpg"
+                  srcset="./images/pf-5@2x.jpg 2x"
                   alt="Screen Illustrations"
                   width="360"
                   height="300"
@@ -416,6 +424,7 @@
               <div class="portfolio-thumb">
                 <img
                   src="./images/pf-6.jpg"
+                  srcset="./images/pf-6@2x.jpg 2x"
                   alt="Online Courses"
                   width="360"
                   height="300"
@@ -508,62 +517,82 @@
       </div>
     </footer>
     <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
-      <button class="mobile-menu-close" type="button" aria-label="Close menu">
-        <svg width="8" height="8" aria-hidden="true">
-          <use href="./images/icons.svg#close"></use>
-        </svg>
-      </button>
-      <nav class="mobile-menu-nav" aria-label="Mobile navigation">
-        <ul class="mobile-menu-list">
-          <li><a class="mobile-menu-link current" href="./index.html">Studio</a></li>
-          <li><a class="mobile-menu-link" href="#portfolio">Portfolio</a></li>
-          <li><a class="mobile-menu-link" href="#footer">Contacts</a></li>
-        </ul>
-      </nav>
-      <address class="mobile-menu-address">
-        <ul>
+      <div class="mobile-menu-container">
+        <button class="mobile-menu-close" type="button" aria-label="Close menu">
+          <svg width="8" height="8" aria-hidden="true">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-nav" aria-label="Mobile navigation">
+          <ul class="mobile-menu-list">
+            <li>
+              <a class="mobile-menu-link current" href="./index.html">Studio</a>
+            </li>
+            <li><a class="mobile-menu-link" href="#portfolio">Portfolio</a></li>
+            <li><a class="mobile-menu-link" href="#footer">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="mobile-menu-address">
+          <ul>
+            <li>
+              <a class="mobile-menu-phone" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a class="mobile-menu-email" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="mobile-menu-social" aria-label="Social media">
           <li>
-            <a class="mobile-menu-phone" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
+            <a
+              class="social-link"
+              href="https://www.instagram.com/"
+              aria-label="Instagram"
             >
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
           </li>
           <li>
-            <a class="mobile-menu-email" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+            <a
+              class="social-link"
+              href="https://twitter.com/"
+              aria-label="Twitter"
             >
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="social-link"
+              href="https://www.facebook.com/"
+              aria-label="Facebook"
+            >
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="social-link"
+              href="https://www.linkedin.com/"
+              aria-label="LinkedIn"
+            >
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#linkedin"></use>
+              </svg>
+            </a>
           </li>
         </ul>
-      </address>
-      <ul class="mobile-menu-social" aria-label="Social media">
-        <li>
-          <a class="social-link" href="https://www.instagram.com/" aria-label="Instagram">
-            <svg class="social-icon" width="24" height="24">
-              <use href="./images/icons.svg#instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a class="social-link" href="https://twitter.com/" aria-label="Twitter">
-            <svg class="social-icon" width="24" height="24">
-              <use href="./images/icons.svg#twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a class="social-link" href="https://www.facebook.com/" aria-label="Facebook">
-            <svg class="social-icon" width="24" height="24">
-              <use href="./images/icons.svg#facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a class="social-link" href="https://www.linkedin.com/" aria-label="LinkedIn">
-            <svg class="social-icon" width="24" height="24">
-              <use href="./images/icons.svg#linkedin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+      </div>
     </div>
     <div class="backdrop" id="modal" aria-hidden="true">
       <div

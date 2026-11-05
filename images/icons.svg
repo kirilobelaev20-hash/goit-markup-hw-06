@@ -90,5 +90,14 @@
         stroke-width="2"
       />
     </symbol>
+    <symbol id="menu" viewBox="0 0 24 24">
+      <path
+        d="M3 6h18M3 12h18M3 18h18"
+        fill="none"
+        stroke="#2e2f42"
+        stroke-linecap="round"
+        stroke-width="2"
+      />
+    </symbol>
   </defs>
 </svg>

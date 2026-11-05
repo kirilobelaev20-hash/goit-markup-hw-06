@@ -11,7 +11,7 @@
 }
 
 .footer-info {
-  text-align: center;
+  text-align: left;
 }
 
 .footer-logo .part-logo {
@@ -19,8 +19,9 @@
 }
 
 .footer-info .footer-logo {
-  display: inline-block;
-  margin-bottom: 16px;
+  display: block;
+  width: max-content;
+  margin: 0 auto 16px;
 }
 
 .footer-text {
@@ -41,6 +42,7 @@
 }
 
 .footer-social .social-list {
+  display: flex;
   gap: 16px;
   justify-content: flex-start;
 }
@@ -57,13 +59,12 @@
 .subscribe-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   gap: 16px;
 }
 
 .subscribe-input {
-  width: min(100%, 398px);
-  min-width: 264px;
+  width: 100%;
   height: 40px;
   padding: 8px 16px;
   border: 1px solid #fff;
@@ -132,6 +133,10 @@
 
 @media (min-width: 768px) {
   .footer-container {
+    max-width: 584px;
+  }
+
+  .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
@@ -157,6 +162,10 @@
     align-items: flex-start;
     gap: 24px;
   }
+
+  .subscribe-input {
+    width: 264px;
+  }
 }
 
 @media (min-width: 1158px) {
@@ -165,12 +174,17 @@
   }
 
   .footer-container {
+    max-width: 1158px;
     flex-wrap: nowrap;
     gap: 0;
   }
 
   .footer-info {
     margin-right: 120px;
+  }
+
+  .footer-info .footer-logo {
+    margin-left: 0;
   }
 
   .footer-social {

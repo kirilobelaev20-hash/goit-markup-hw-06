@@ -30,8 +30,8 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1158px;
-  padding: 0 15px;
+  max-width: 320px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 
@@ -69,11 +69,17 @@ img {
 
 @media (min-width: 768px) {
   .container {
-    padding: 0 16px;
+    max-width: 768px;
+    padding: 0 24px;
   }
 }
 
 @media (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+
   .section {
     padding: 120px 0;
   }
