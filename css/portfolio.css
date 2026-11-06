@@ -75,6 +75,10 @@
 }
 
 @media (min-width: 768px) {
+  .portfolio-list {
+    row-gap: 72px;
+  }
+
   .portfolio-item {
     flex-basis: calc((100% - 24px) / 2);
   }
@@ -87,5 +91,9 @@
 
   .portfolio-item {
     flex-basis: calc((100% - 48px) / 3);
+  }
+
+  .portfolio-list {
+    row-gap: 48px;
   }
 }

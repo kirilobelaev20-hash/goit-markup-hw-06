@@ -47,6 +47,10 @@
   .features-item {
     flex-basis: calc((100% - 24px) / 2);
   }
+
+  .feature-title {
+    text-align: left;
+  }
 }
 
 @media (min-width: 1158px) {

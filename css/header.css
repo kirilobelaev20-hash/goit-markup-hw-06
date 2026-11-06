@@ -110,7 +110,11 @@
 @media (min-width: 768px) {
   .header-container {
     justify-content: flex-start;
-    gap: 120px;
+    gap: 0;
+  }
+
+  .header-logo {
+    margin-right: 120px;
   }
 
   .header-nav {
@@ -134,8 +138,8 @@
 }
 
 @media (min-width: 1158px) {
-  .header-container {
-    gap: 76px;
+  .header-logo {
+    margin-right: 76px;
   }
 
   .header-logo {
